@@ -8,7 +8,6 @@ jobs:
       - image: 'debuccs/cs3300-code-esaas'
     steps:
       - checkout
-      - store_test_results
       - run:
           name: rspec
           command: bundle install && bundle exec rake db:migrate RAILS_ENV=test && bundle exec rspec
