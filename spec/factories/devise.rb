@@ -5,6 +5,13 @@ FactoryBot.define do
       password {"qwerty"}
       # Add additional fields as required via your User model
     end
+
+    factory :user2 do
+      id {1}
+      email {"test@testuser.com"}
+      password {"qwerty2"}
+      # Add additional fields as required via your User model
+    end
   
     # Not used in this tutorial, but left to show an example of different user types
     # factory :admin do

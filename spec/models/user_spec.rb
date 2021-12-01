@@ -1,5 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  #pending "add some examples to (or delete) #{__FILE__}"
+  context "Sign-up tests" do
+    it "should fail" do
+      user = User.new()
+      expect(user.valid?).to eq(false)
+    end
+  end
 end
