@@ -16,6 +16,8 @@ SimpleCov.start 'rails' do
   add_filter '/spec/' #for rspec
   add_filter '/channels/'
   add_filter '/mailers/'
+  add_filter '/jobs/'
+  add_filter '/helpers/'
 end
 
 require 'devise'
