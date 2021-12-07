@@ -1,16 +1,17 @@
-<div class="text-center">
+<div class="">
   <p id="notice"><%= notice %></p>
 
-  <p>
-    <strong>Title:</strong>
-    <%= @project.title %>
+  <p class="container bg-primary my-3 p-3">
+    <strong class="text-white" style="font-size:large">Project Title:</strong>
+    <span class="text-white" style="padding:20px"><%= @project.title %></span>
   </p>
 
-  <p>
-    <strong>Description:</strong>
-    <%= @project.description %>
+  <p class="container border my-3 p-3">
+    <strong style="font-size:large">Description:</strong>
+    <span style="padding:20px"><%= @project.description %></span>
   </p>
 
-  <%= link_to 'Edit', edit_project_path(@project) %> |
-  <%= link_to 'Back', projects_path %>
+  <div class="container">
+    <a class="btn btn-warning"<%= link_to 'Edit', edit_project_path(@project) %></a>
+    <a class="btn btn-warning"<%= link_to 'Back', projects_path %></a>
 </div>
