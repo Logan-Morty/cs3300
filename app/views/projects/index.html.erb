@@ -22,10 +22,10 @@
           <a class="btn btn-primary text-white" <%= link_to 'Show', project %>
         </td>
         <td>
-          <a class="btn btn-primary text-white" <%= link_to 'Edit', edit_project_path(project) %>
+          <a class="btn btn-warning text-white" <%= link_to 'Edit', edit_project_path(project) %>
         </td>
         <td>
-          <a class="btn btn-primary text-white" <%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %>
+          <a class="btn btn-danger text-white" <%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %>
         </td>
       </tr>
     <% end %>

@@ -14,29 +14,17 @@
       <div class="navbar navbar-expand-sm bg-dark fixed-top">
         <% if user_signed_in? %>
           <ul class="btn-group navbar-nav">
-            <li class="btn btn-info">
-              <a class="text-white" <%= link_to "Home", projects_path %></a>
-            </li>
-            <li class="btn btn-info"> 
-              <a class="text-white" <%= link_to 'Edit profile', edit_user_registration_path %></a>
-            </li>
-            <li class="btn btn-info">
-              <a class="text-white" <%= link_to "Logout", destroy_user_session_path, method: :delete %></a>
-            </li>
+            <a class="text-white btn btn-info" <%= link_to "Home", projects_path %></a>
+            <a class="text-white btn btn-info" <%= link_to 'Edit profile', edit_user_registration_path %></a>
+            <a class="text-white btn btn-info" <%= link_to "Logout", destroy_user_session_path, method: :delete %></a>
           </ul>
           <span class="navbar-text" style="padding-left:20px"><strong style="color:white"><%= current_user.email %></strong>.</span>
 
         <% else %>
           <ul class="btn-group navbar-nav">
-            <li class="btn btn-info">
-              <a class="text-white" <%= link_to "Home", projects_path %></a>
-            </li>
-            <li class="btn btn-info">
-              <a class="text-white" <%= link_to "Sign up", new_user_registration_path %></a>
-            </li>
-            <li class="btn btn-info">
-              <a class="text-white"<%= link_to "Login", new_user_session_path %></a>
-            </li>
+            <a class="text-white btn btn-info" <%= link_to "Home", projects_path %></a>
+            <a class="text-white btn btn-info" <%= link_to "Sign up", new_user_registration_path %></a>
+            <a class="text-white btn btn-info"<%= link_to "Login", new_user_session_path %></a>
           </ul>
         <% end %>
       </div>

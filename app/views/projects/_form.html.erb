@@ -11,17 +11,19 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :title %>
+  <div class="field text-center">
+    <p style="font-size:large"><%= form.label :title %>:</p>
     <%= form.text_field :title %>
   </div>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description %>
+  <br>
+
+  <div class="field text-center">
+    <p style="font-size:large"><%= form.label :description %>:</p>
+    <p><%= form.text_area :description %></p>
   </div>
 
-  <div class="actions">
+  <div class="actions text-center container">
     <%= form.submit %>
   </div>
 <% end %>
