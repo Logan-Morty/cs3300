@@ -1,6 +1,12 @@
-<h1>Editing Project</h1>
+<div>
+    <p class="container bg-primary my-3 p-3">
+        <strong class="text-white" style="font-size:large">Editing Project:</strong>
+        <span class="text-white" style="padding:20px"><%= @project.title %></span>
+    </p>
+    <%= render 'form', project: @project %>
 
-<%= render 'form', project: @project %>
-
-<%= link_to 'Show', @project %> |
-<%= link_to 'Back', projects_path %>
+    <div class="container">
+        <a class="btn btn-warning text-white"<%= link_to 'Show', @project %></a>
+        <a class="btn btn-primary text-white"<%= link_to 'Back', projects_path %></a>
+    </div>
+</div>
